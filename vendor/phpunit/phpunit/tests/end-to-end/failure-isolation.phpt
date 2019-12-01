@@ -1,7 +1,7 @@
 --TEST--
 phpunit --process-isolation FailureTest ../../_files/FailureTest.php
 --FILE--
-<?php
+<?php declare(strict_types=1);
 $_SERVER['argv'][1] = '--no-configuration';
 $_SERVER['argv'][2] = '--process-isolation';
 $_SERVER['argv'][3] = 'FailureTest';
@@ -27,6 +27,7 @@ Failed asserting that two arrays are equal.
  Array (
 -    0 => 1
 +    0 => 2
+ )
 
 %s:%i
 
@@ -45,6 +46,7 @@ Failed asserting that two objects are equal.
  stdClass Object (
 -    'foo' => 'bar'
 +    'bar' => 'foo'
+ )
 
 %s:%i
 
@@ -74,6 +76,7 @@ Failed asserting that two strings are equal.
  'foo\n
 -bar\n
 +baz\n
+ '
 
 %s:%i
 

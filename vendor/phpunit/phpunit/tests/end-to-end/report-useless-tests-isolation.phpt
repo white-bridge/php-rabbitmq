@@ -1,7 +1,7 @@
 --TEST--
 phpunit --process-isolation IncompleteTest ../../_files/IncompleteTest.php
 --FILE--
-<?php
+<?php declare(strict_types=1);
 $_SERVER['argv'][1] = '--no-configuration';
 $_SERVER['argv'][2] = '--process-isolation';
 $_SERVER['argv'][3] = 'NothingTest';
@@ -20,6 +20,8 @@ There was 1 risky test:
 
 1) NothingTest::testNothing
 This test did not perform any assertions
+
+%s:14
 
 OK, but incomplete, skipped, or risky tests!
 Tests: 1, Assertions: 0, Risky: 1.

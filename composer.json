@@ -16,12 +16,10 @@
         "ext-mbstring": "*",
         "psr/container": "^1.0",
         "doctrine/orm": "^2.7",
-        "phpseclib/bcmath_compat": "^1.0",
-        "phpseclib/phpseclib": "^2.0",
         "php-amqplib/php-amqplib": "^2.11"
     },
     "require-dev": {
-        "phpunit/phpunit": "~6.0"
+        "phpunit/phpunit": "~8.0"
     },
     "autoload": {
         "classmap": [
