@@ -5,7 +5,6 @@
  * Date: 2019/11/30
  * Time: 下午7:41
  */
-phpinfo();
 
 define('APP_START_TIME',microtime(true));
 
